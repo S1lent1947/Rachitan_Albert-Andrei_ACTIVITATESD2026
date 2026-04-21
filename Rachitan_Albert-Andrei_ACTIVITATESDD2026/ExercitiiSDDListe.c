@@ -105,8 +105,15 @@ void* citireListaMasiniDinFisier(const char* numeFisier) {
 	return cap;
 }
 
-void dezalocareListaMasini(/*lista de masini*/) {
-	//sunt dezalocate toate masinile si lista de elemente
+void dezalocareListaMasini(Nod** cap) {
+	while (*cap != NULL)
+	{
+		Nod* temp = *cap;
+		*cap = (*cap)->next;
+		free(temp->info.model);
+		free(temp->info.numeSofer);
+		free(temp);
+	}
 }
 
 float calculeazaPretMediu(Nod* cap) {
@@ -122,17 +129,30 @@ float calculeazaPretMediu(Nod* cap) {
 	return pret/index; 
 }
 
-void stergeMasiniDinSeria(Nod* cap, char serieCautata) {
+void stergeMasiniDinSeria(Nod** cap, char serieCautata) {
 	//sterge toate masinile din lista care au seria primita ca parametru.
 	//tratati situatia ca masina se afla si pe prima pozitie, si pe ultima pozitie
-	while (cap != NULL)
-	{
-		if (strcmp(cap->info.serie, serieCautata))
-		{
-			Nod* aux = cap;
+	while (*cap != NULL && (*cap)->info.serie == serieCautata) {
+		Nod* temp = *cap;
+		*cap = (*cap)->next;
 
+		free(temp->info.model);
+		free(temp->info.numeSofer);
+		free(temp);
+	}
+	Nod* curent = *cap;
+	while (curent != NULL && curent->next != NULL) {
+		if (curent->next->info.serie == serieCautata) {
+			Nod* temp = curent->next;
+			curent->next = temp->next;
+
+			free(temp->info.model);
+			free(temp->info.numeSofer);
+			free(temp);
 		}
-		cap = cap->next;
+		else {
+			curent = curent->next;
+		}
 	}
 }
 
@@ -153,6 +173,11 @@ float calculeazaPretulMasinilorUnuiSofer(Nod* cap,const char* numeSofer) {
 int main() {
 	Nod* cap = citireListaMasiniDinFisier("masini.txt");
 	afisareListaMasini(cap);
-
+	stergeMasiniDinSeria(&cap, 'A');
+	printf("------------------------\n\n\n\n\n");
+	afisareListaMasini(cap);
+	dezalocareListaMasini(&cap);
+	printf("------------------------\n\n\n\n\n");
+	afisareListaMasini(cap);
 	return 0;
 }
