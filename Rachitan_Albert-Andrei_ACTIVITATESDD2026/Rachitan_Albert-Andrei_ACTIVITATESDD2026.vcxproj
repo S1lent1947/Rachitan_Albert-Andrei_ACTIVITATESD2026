@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Exercitii1.c" />
     <ClCompile Include="Exercitii2.cpp" />
+    <ClCompile Include="ExercitiiSDDListe.c" />
     <ClCompile Include="EXERCITII_SDD.c" />
     <ClCompile Include="Seminar1.c" />
     <ClCompile Include="Seminar2.c" />

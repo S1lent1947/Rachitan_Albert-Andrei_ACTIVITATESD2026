@@ -30,5 +30,8 @@
     <ClCompile Include="EXERCITII_SDD.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExercitiiSDDListe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
