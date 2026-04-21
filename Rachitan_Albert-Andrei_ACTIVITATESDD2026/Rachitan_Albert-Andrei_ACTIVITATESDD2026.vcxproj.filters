@@ -24,5 +24,11 @@
     <ClCompile Include="Exercitii1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exercitii2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EXERCITII_SDD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
