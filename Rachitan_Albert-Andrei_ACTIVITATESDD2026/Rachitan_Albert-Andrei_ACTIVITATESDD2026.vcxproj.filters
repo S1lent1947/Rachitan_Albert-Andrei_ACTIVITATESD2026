@@ -42,5 +42,8 @@
     <ClCompile Include="HashTableListaDubla.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Examen1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
