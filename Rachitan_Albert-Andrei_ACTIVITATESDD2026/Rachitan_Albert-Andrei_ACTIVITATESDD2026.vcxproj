@@ -131,6 +131,9 @@
     <ClCompile Include="Exercitii2.cpp" />
     <ClCompile Include="ExercitiiSDDListe.c" />
     <ClCompile Include="EXERCITII_SDD.c" />
+    <ClCompile Include="HashTable.c" />
+    <ClCompile Include="HashTableListaDubla.c" />
+    <ClCompile Include="ListeDubluInlantuite.c" />
     <ClCompile Include="Seminar1.c" />
     <ClCompile Include="Seminar2.c" />
   </ItemGroup>

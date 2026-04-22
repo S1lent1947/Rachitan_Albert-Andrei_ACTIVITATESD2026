@@ -33,5 +33,14 @@
     <ClCompile Include="ExercitiiSDDListe.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ListeDubluInlantuite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTableListaDubla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
