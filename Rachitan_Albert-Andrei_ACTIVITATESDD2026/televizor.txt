@@ -1,0 +1,5 @@
+Tataie,67,14
+Cristian,67,31
+Miruna,43,22
+Albert,65,77
+Nicolas,77,6767

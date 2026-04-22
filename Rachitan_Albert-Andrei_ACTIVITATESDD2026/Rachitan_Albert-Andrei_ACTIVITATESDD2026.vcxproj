@@ -135,9 +135,12 @@
     <ClCompile Include="HashTable.c" />
     <ClCompile Include="HashTableListaDubla.c" />
     <ClCompile Include="HashTableV2.c" />
+    <ClCompile Include="HashTablev3.c" />
+    <ClCompile Include="Heap.c" />
     <ClCompile Include="ListeDubluInlantuite.c" />
     <ClCompile Include="Seminar1.c" />
     <ClCompile Include="Seminar2.c" />
+    <ClCompile Include="Test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
