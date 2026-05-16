@@ -130,6 +130,7 @@
     <ClCompile Include="Examen1.c" />
     <ClCompile Include="Exercitii1.c" />
     <ClCompile Include="Exercitii2.cpp" />
+    <ClCompile Include="ExercitiiArbori.cpp" />
     <ClCompile Include="ExercitiiSDDListe.c" />
     <ClCompile Include="EXERCITII_SDD.c" />
     <ClCompile Include="HashTable.c" />
